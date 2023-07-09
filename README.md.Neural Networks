@@ -1,0 +1,60 @@
+# Predicting Heart Disease by using Neural Networks
+
+This project focuses on predicting heart disease using neural networks. The dataset used for training and testing contains various features related to individuals, such as age, sex, chest pain type, resting blood pressure, serum cholestoral, fasting blood sugar, electrocardiographic results, maximum heart rate achieved, exercise-induced angina, ST depression induced by exercise, slope of the peak exercise ST segment, number of major vessels colored by flourosopy, and thalassemia results. The target variable indicates the presence (1) or absence (0) of heart disease.
+
+## Installation
+
+To run the project, make sure you have the following libraries installed:
+
+- Pandas
+- Matplotlib
+- Seaborn
+- NumPy
+- SciPy
+- Scikit-learn
+- TensorFlow (for the neural network implementation)
+
+You can install these libraries using the following command:
+
+```
+pip install pandas matplotlib seaborn numpy scipy scikit-learn tensorflow
+```
+
+## Usage
+
+The project code is divided into the following sections:
+
+1. Data Exploration: Statistical analysis of the dataset, including mean, median, mode, standard deviation, and detection of outliers.
+2. Data Pre-processing: Handling missing values, encoding categorical variables, standardizing or normalizing numerical features, and detecting and handling outliers.
+3. Train and Test Split: Splitting the dataset into training and testing sets for model evaluation.
+4. Linear Regression Model: Training and evaluating a linear regression model on the dataset.
+5. Neural Network Classification: Building and training a neural network model using TensorFlow for heart disease classification.
+6. Improving Model Accuracy: Implementing a support vector machine (SVM) algorithm to improve the accuracy of the model.
+7. Confusion Matrix: Evaluating the performance of the model using a confusion matrix and calculating recall.
+8. Pairplot Visualization: Visualizing the relationships between features using a pairplot.
+
+To execute the project, run the provided code in a Python environment. Make sure to adjust any file paths if necessary.
+
+```python
+# Code snippets from the project
+# ...
+
+# Linear Regression Model
+# ...
+
+# Neural Network Classification
+# ...
+
+# Improving Model Accuracy
+# ...
+
+# Confusion Matrix
+# ...
+
+# Pairplot Visualization
+# ...
+```
+
+## Thank You
+
+Thank you for your interest in the Predicting Heart Disease project!
