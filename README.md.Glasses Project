@@ -1,0 +1,104 @@
+# Glasses Project
+
+This project focuses on building a computer vision system to classify people with and without glasses using convolutional neural networks (CNN).
+
+## Dataset
+
+The project utilizes a dataset containing images of individuals categorized into two classes: those wearing glasses and those without glasses. The dataset has been provided in a ZIP file named `glasses.zip`.
+
+To use the dataset, extract the contents of the ZIP file into a directory named `data` within the project's root directory.
+
+## Installation
+
+To run the project, make sure you have PyTorch and torchvision installed. You can install the required packages using conda:
+
+```bash
+conda install pytorch torchvision torchaudio -c pytorch
+```
+
+## Usage
+
+The project code is organized into the following sections:
+
+1. Data Preparation and Loading: The dataset is loaded and preprocessed using transformations such as resizing, cropping, and converting to tensors.
+
+2. CNN Model Architecture: The CNN model is defined using three convolutional layers followed by fully connected layers to perform classification.
+
+3. Training the Model: The model is trained using the dataset. The training loop executes a specified number of epochs, computing the loss, and updating the model parameters.
+
+4. Saving and Loading the Model: The trained model is saved as a `.pt` file using PyTorch's `torch.save` function. To load a saved model, `torch.load` is used.
+
+5. Evaluation: The accuracy of the trained model is evaluated by calculating the accuracy on the training data.
+
+6. Visualization: The project includes visualizations to provide insights into the model's performance, such as displaying sample images from the dataset and showing the probability distribution for a randomly chosen image.
+
+To execute the project, run the provided code in a Python environment. Make sure to adjust any file paths if necessary.
+
+```python
+# Code snippets from the project
+# ...
+
+# Example usage of the Glasses model
+model = CNN(K)
+model.to(device)
+# ...
+
+# Training the model
+train_losses = Glasses(model, criterion, optimizer, trainloader, epochs=40)
+# ...
+
+# Saving and loading the model
+PATH = "Glasses.pt"
+torch.save(model, PATH)
+# ...
+
+# Evaluation
+correct = 0
+total = 0
+# ...
+
+# Visualization
+fig, axes = plt.subplots(figsize=(10, 10), ncols=5)
+# ...
+```
+
+## Parameters in CNN Model
+
+The CNN model architecture consists of convolutional layers, activation functions, batch normalization, max-pooling layers, and fully connected layers. The parameters within the CNN model include:
+
+- Convolutional Layers: The number of output channels, kernel size, and padding affect the feature extraction capability of the model.
+- Activation Functions: ReLU (Rectified Linear Unit) is used for introducing non-linearity into the model.
+- Batch Normalization: It normalizes the output of the previous layer, improving the stability and performance of the model.
+- Max-Pooling Layers: The pool size affects the downsampling of the input, reducing the spatial dimensions.
+- Fully Connected Layers: The number of neurons in the fully connected layers and the dropout probability influence the model's ability to learn complex patterns.
+
+## Image Augmentation
+
+Image augmentation is performed during training by applying transformations such as resizing, random cropping, and normalization to the input images. These augmentations help improve the model's generalization and robustness by introducing variations in the training data.
+
+## Epochs and Batch Sizes
+
+The training process involves iterating over the dataset multiple times, where each iteration is called an epoch. The number of epochs determines how many times the model sees the entire dataset during training.
+
+Batch size refers to the number of samples processed in each iteration. A larger batch size may increase the training speed but requires more memory.
+
+In this project, the model was trained for 40 epochs with a batch size of 64.
+
+## Outcomes of the Project
+
+The project aims to achieve the following outcomes:
+
+- Display images of each class in the dataset.
+- Utilize CNN for model building, consisting of convolutional layers, activation functions, batch normalization, and fully connected layers.
+- Explain the parameters in the CNN model and their impact on model building.
+- Explore the effects of image augmentation on the model's performance.
+- Investigate the influence of epochs and batch sizes on the model's accuracy.
+- Develop a CNN model capable of classifying people with and without glasses.
+
+## Acknowledgements
+
+The project code is inspired by the work of [Muskan Mishra](https://github.com/muskanmishra717/Important-Projects).
+
+## Thank You
+
+Thank you for your interest in the Glasses Project! 
